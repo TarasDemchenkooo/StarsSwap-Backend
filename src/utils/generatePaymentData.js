@@ -4,6 +4,7 @@ function generatePaymentData(paymentData) {
     const description = `Confirm your purchase of ${title} for ${paymentData.from.amount} ${paymentData.from.symbol}`
 
     const payload = {
+        id: paymentData.id,
         address: paymentData.address,
         from: {
             symbol: paymentData.from.symbol,
